@@ -1,6 +1,6 @@
 function getComputerChoice(){
-    let choice = Math.floor(Math.random()*3);
-    switch (choice) {
+    const computerChoice = Math.floor(Math.random()*3);
+    switch (computerChoice) {
         case 0:
          console.log("rock");
          break;
@@ -11,5 +11,18 @@ function getComputerChoice(){
             console.log("Scissors");
          break;
     }
+};
+function getHumanChoice(){
+const validCHoice = ['rock','paper','scissor']; 
+while(true){
+    const humainChoice = prompt("Enter 'rock' or 'paper'or 'scissor'");
+    if(validCHoice.includes(humainChoice)){
+        console.log("you choose : "+ humainChoice);
+    }else{
+        console.log("invalid choice.Please try again");
+    }
 }
-getComputerChoice();
+}
+
+// getComputerChoice();
+getHumanChoice();
