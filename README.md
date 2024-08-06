@@ -13,11 +13,10 @@ This is a simple Rock-Paper-Scissors game created as part of The Odin Project's 
     Interactive Play: The game interacts with the user, providing feedback and updating scores in real-time.
 
 ## How to Run
-***
-In Terminal (Node.js):
 
-    Clone the Repository
+In Terminal (Node.js):
 ***
+    Clone the Repository
  bash
 
 git clone https://github.com/coding-with-lounas/Rock-Paper-Scissors.git
@@ -28,22 +27,23 @@ Navigate to the Project Directory
  bash
 
 cd Rock-Paper-Scissors
-
-Install Dependencies
-Install prompt-sync to handle user input in the terminal:
 ***
+ Install Dependencies
+ Install prompt-sync to handle user input in the terminal
+
 bash
 
 npm install prompt-sync
 
 Run the Game
-Execute the script using Node.js:
+ Execute the script using Node.js:
 
-bash
+    bash
 
     node script.js
 
     Note: Ensure the require('prompt-sync') line is uncommented in index.js for terminal play.
+    
 ***
 In Browser (HTML):
 
