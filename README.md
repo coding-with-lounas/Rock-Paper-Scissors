@@ -24,14 +24,14 @@ git clone https://github.com/coding-with-lounas/Rock-Paper-Scissors.git
 
 Navigate to the Project Directory
 
-`` bash
+ bash
 
 cd Rock-Paper-Scissors
 
 Install Dependencies
 Install prompt-sync to handle user input in the terminal:
 
-``bash
+bash
 
 npm install prompt-sync
 
