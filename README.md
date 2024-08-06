@@ -17,11 +17,12 @@ This is a simple Rock-Paper-Scissors game created as part of The Odin Project's 
 In Terminal (Node.js):
 
     Clone the Repository
-
- ``bash
+***
+ bash
 
 git clone https://github.com/coding-with-lounas/Rock-Paper-Scissors.git
 
+***
 Navigate to the Project Directory
 
  bash
@@ -30,7 +31,7 @@ cd Rock-Paper-Scissors
 
 Install Dependencies
 Install prompt-sync to handle user input in the terminal:
-
+***
 bash
 
 npm install prompt-sync
@@ -40,7 +41,7 @@ Execute the script using Node.js:
 
 bash
 
-    node index.js
+    node script.js
 
     Note: Ensure the require('prompt-sync') line is uncommented in index.js for terminal play.
 ***
@@ -56,7 +57,7 @@ In Browser (HTML):
 
 ## Project Structure
 
-    index.js: Contains the main game logic for terminal play.
+    script.js: Contains the main game logic for terminal play.
     index.html: Provides the HTML interface for browser-based play.
     README.md: This file, detailing the project.
 
