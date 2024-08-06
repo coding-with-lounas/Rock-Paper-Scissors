@@ -45,10 +45,10 @@ const playRound =(humanChoice,computerChoice)=>{
  }else if (humanChoice === "paper" && computerChoice === "rock" ||
             humanChoice === "scissors" && computerChoice === "paper" ||
             humanChoice === "rock" && computerChoice ==="scissor")
-{ resultMessage=winMessage + `${humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1)} beat ${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}`;
+{ resultMessage = winMessage +  `${ humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1) } beat ${ computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1) }`;
    humanScore++;
 }else{
- resultMessage=loseMessage + `${humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1)} be defeated ${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}`; 
+ resultMessage = loseMessage +  `${ humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1) } be defeated ${ computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1) }`; 
   computerScore++;
 }
 console.log(resultMessage);
@@ -66,8 +66,8 @@ const playGame =()=>{
  }
  console.log(`finale score - You : ${humanScore},computer : ${computerScore}`);
  if(humanScore>computerScore){console.log("You won this game,congratulations !");}
- else{console.log("Sorry , you lost the game");} 
- const playAgain = prompt("do you want play again (y/n)? ").toLowerCase();
+ else{  console.log(" Sorry , you lost the game");} 
+ const playAgain  =  prompt(" do you want play again (y/n) ?  ").toLowerCase();
  if( playAgain != "y") break;
 }
 };
