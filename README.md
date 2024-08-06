@@ -4,7 +4,7 @@
 ## Description
 ***
 
-This is a simple Rock-Paper-Scissors game created as part of The Odin Project's challenge. The project features both a command-line interface using Node.js and a browser-based interface using HTML. The game allows you to play against the computer, keeping track of scores over a series of rounds and declaring a winner after a set number of rounds.
+This is a  Rock-Paper-Scissors game created as part of The Odin Project's challenge. The project features both a command-line interface using Node.js and a browser-based interface using HTML. The game allows you to play against the computer, keeping track of scores over a series of rounds and declaring a winner after a set number of rounds.
 ## Features
 
     Command-Line Interface (CLI): Play the game in the terminal using Node.js with user input handled via prompt-sync.
