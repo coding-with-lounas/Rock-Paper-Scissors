@@ -1,4 +1,4 @@
-const  prompt = require("prompt-sync")();
+// const  prompt = require("prompt-sync")();
 
 let humanScore = 0;
 let computerScore = 0; 
@@ -53,7 +53,10 @@ const playRound =(humanChoice,computerChoice)=>{
 }
 console.log(resultMessage);
 };
+
+
 const playGame =()=>{
+    while (true) {
  let numberOfGame = 0; 
  while(numberOfGame<5){
   const computerChoice =getComputerChoice();
@@ -63,6 +66,9 @@ const playGame =()=>{
  }
  console.log(`finale score - You : ${humanScore},computer : ${computerScore}`);
  if(humanScore>computerScore){console.log("You won this game,congratulations !");}
- else{console.log("Sorry , you lost the game");}
+ else{console.log("Sorry , you lost the game");} 
+ const playAgain = prompt("do you want play again (y/n)? ").toLowerCase();
+ if( playAgain != "y") break;
+}
 };
 playGame();
