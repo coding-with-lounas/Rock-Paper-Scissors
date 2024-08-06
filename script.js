@@ -1,4 +1,4 @@
-// const  prompt = require("prompt-sync")();
+const  prompt = require("prompt-sync")();
 
 let humanScore = 0;
 let computerScore = 0; 
@@ -23,9 +23,9 @@ function getComputerChoice(){
     }
 };
 function getHumanChoice(){
-const validChoice = ['rock','paper','scissor']; 
+const validChoice = ['rock','paper','scissors']; 
 while(true){
-    const humanChoice = prompt("Enter 'rock' or 'paper'or 'scissor' : ").toLowerCase();
+    const humanChoice = prompt("Enter 'rock' or 'paper'or 'scissors' : ").toLowerCase();
     // console.log(`input received ${humanChoice}`);
     if(validChoice.includes(humanChoice)){
       console.log("you choose : "+ humanChoice);
@@ -41,18 +41,28 @@ const playRound =(humanChoice,computerChoice)=>{
  let drawMessage ="it's draw !";
  let resultMessage ;
  if(humanChoice===computerChoice){
-    resultMessage = drawMessage + `both chose ${humanChoice} .`
+    resultMessage = drawMessage + `both chose ${humanChoice} .`;
  }else if (humanChoice === "paper" && computerChoice === "rock" ||
-            humanChoice === "scissor" && computerChoice === "paper" ||
+            humanChoice === "scissors" && computerChoice === "paper" ||
             humanChoice === "rock" && computerChoice ==="scissor")
 { resultMessage=winMessage + `${humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1)} beat ${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}`;
+   humanScore++;
 }else{
  resultMessage=loseMessage + `${humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1)} be defeated ${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}`; 
-
+  computerScore++;
 }
 console.log(resultMessage);
-}
-
-const computerChoice =getComputerChoice();
-const humanChoice =getHumanChoice();
-playRound(humanChoice,computerChoice) ;
+};
+const playGame =()=>{
+ let numberOfGame = 0; 
+ while(numberOfGame<5){
+  const computerChoice =getComputerChoice();
+   const humanChoice =getHumanChoice();
+   playRound(humanChoice,computerChoice) ;  
+   numberOfGame ++; 
+ }
+ console.log(`finale score - You : ${humanScore},computer : ${computerScore}`);
+ if(humanScore>computerScore){console.log("You won this game,congratulations !");}
+ else{console.log("Sorry , you lost the game");}
+};
+playGame();
